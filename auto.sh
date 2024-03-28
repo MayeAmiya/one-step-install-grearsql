@@ -321,6 +321,7 @@ else
     echo 'PrivateTmp=false' >> /lib/systemd/system/greatsql.service
 fi
 
+mysqld --initialize-insecure
 
 systemctl daemon-reload
 
